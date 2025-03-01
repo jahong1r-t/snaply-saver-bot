@@ -23,23 +23,14 @@ public class BotConfiguration extends TelegramLongPollingBot {
         }
     }
 
-    private void sendMsg(Long chatId, String text) {
-        SendMessage build = SendMessage.builder().chatId(chatId).text(text).build();
-        try {
-            execute(build);
-        } catch (TelegramApiException e) {
-            throw new RuntimeException(e);
-        }
-    }
-
 
     @Override
     public String getBotUsername() {
-        return "snaply_saver_bot";
+        return "";
     }
 
     @Override
     public String getBotToken() {
-        return "7090751376:AAGmKN7eRwi7GxCesv-c0MlB8cMtG82B_BY";
+        return "";
     }
 }
